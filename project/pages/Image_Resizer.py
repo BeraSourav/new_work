@@ -8,7 +8,7 @@ temp_dir  = tempfile.mkdtemp()
 st.header("Image Resizer")
 
 file_img1 = st.file_uploader("Upload Image" , type=['jpeg','png','jpg','gif'])
-if file_img is not None:
+if file_img1 is not None:
     image1 = Image.open(file_img1)
     name1 = file_img1.name
     st.image(image1 , width = 100, caption=f"{name1}")
