@@ -20,12 +20,12 @@ if file_img1 is not None:
         resized_image = image1.resize((width,height))
         return resized_image
 
-    temp_f_path = temp_dir + f"/{name.split('.')[0]}compress.{name.split('.')[1]}"
+    temp_f_path = temp_dir + f"/{name1.split('.')[0]}compress.{name1.split('.')[1]}"
     resize = correct_size(image1,new_width,new_height)
     resize.save(temp_f_path)
     st.download_button(
         label = "download resize image" ,
         data = open(temp_f_path,'rb').read(),
-        file_name = f"NΦResizer-{name.split('.')[0]}.{name.split('.')[1]}",
+        file_name = f"NΦResizer-{name1.split('.')[0]}.{name1.split('.')[1]}",
         mime='image'
     )
