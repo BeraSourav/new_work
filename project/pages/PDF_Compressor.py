@@ -46,4 +46,4 @@ if file is not None:
 
 
 
-    #task.delete_current_task()
+    task.delete_current_task()
