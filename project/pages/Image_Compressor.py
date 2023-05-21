@@ -23,4 +23,4 @@ if file_img is not None:
                 file_name = f"NΦCompressor-{name.split('.')[0]}.{name.split('.')[1]}",
                 mime='image'
             )
-    tempfile.close()
+   
