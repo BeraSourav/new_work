@@ -4,6 +4,7 @@ import tempfile
 from PIL import Image
 temp_dir  = tempfile.mkdtemp()
 
+st.markdown("<a style=' text-align:center; color:brown; font-style:bold; font-size:25px;' href='/' target='_self'>Home Page</a>", unsafe_allow_html=True)
 
 st.header("Image Resizer")
 

@@ -2,9 +2,11 @@ import streamlit as st
 from pathlib import Path
 import tempfile
 from PIL import Image
-st.header("Image compressor")
 temp_dir  = tempfile.mkdtemp()
 
+st.markdown("<a style=' text-align:center; color:brown; font-style:bold; font-size:25px;' href='/' target='_self'>Home Page</a>", unsafe_allow_html=True)
+
+st.header("Image compressor")
 
 file_img = st.file_uploader("Upload Image" , type=['jpeg','png','jpg','gif'])
 if file_img is not None:

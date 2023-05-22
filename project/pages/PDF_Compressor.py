@@ -5,6 +5,9 @@ from pathlib import Path
 import os
 import shutil
 
+st.markdown("<a style=' text-align:center; color:brown; font-style:bold; font-size:25px;' href='/' target='_self'>Home Page</a>", unsafe_allow_html=True)
+
+
 st.header("PDF Compressor")
 
 temp_dir  = tempfile.mkdtemp()
