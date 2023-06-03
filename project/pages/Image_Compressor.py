@@ -16,7 +16,7 @@ if file_img is not None:
     qual_img = st.slider("Compress Percentage (%)", min_value=0, max_value=95)
     temp_f_path = temp_dir + f"/{name.split('.')[0]}compress.{name.split('.')[1]}"
     st.write(f"image size = {round(file_img.size / (1024*1024) , 3)} MB")
-    image.save(temp_f_path , optimize=True,quality= 95-qual_img)
+    image.save(temp_f_path , optimize=True,quality= 100-qual_img)
     file_size1 = Path(temp_f_path).stat().st_size
     st.write(f"compressed image size = {round(file_size1 / (1024*1024) , 3)} MB" )
     st.download_button(
