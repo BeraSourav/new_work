@@ -4,6 +4,12 @@ import shutil
 import os
 from pdf2docx import Converter
 
+import subprocess
+
+# Run the shell command to install libgl1-mesa-dev
+subprocess.run(['sudo', 'apt-get', 'install', 'libgl1-mesa-dev'])
+
+
 
 st.header("Pdf to Word")
 
