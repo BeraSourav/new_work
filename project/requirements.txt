@@ -2,3 +2,5 @@ streamlit
 pathlib
 pylovepdf
 pillow
+img2pdf
+pdf2docx
