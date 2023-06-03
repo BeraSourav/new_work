@@ -4,3 +4,5 @@ pylovepdf
 pillow
 img2pdf
 pdf2docx
+opencv
+headless
