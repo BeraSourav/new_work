@@ -13,7 +13,7 @@ if file_img is not None:
     image = Image.open(file_img)
     name = file_img.name
     st.image(image , width = 100, caption=f"{name}")
-    qual_img = st.slider("Compress Percentage (%)", min_value=0, max_value=95)
+    qual_img = st.slider("Compress Percentage (%)", min_value=0, max_value=100)
     temp_f_path = temp_dir + f"/{name.split('.')[0]}compress.{name.split('.')[1]}"
     st.write(f"image size = {round(file_img.size / (1024*1024) , 3)} MB")
     image.save(temp_f_path , optimize=True,quality= 100-qual_img)
